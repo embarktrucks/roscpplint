@@ -33,6 +33,7 @@ filters = [
     # Gives a lot of false positives. May want to reenable at some point.
     '-runtime/threadsafe_fn',
     '-runtime/references',
+    '-whitespace/indent',
 ]
 sys.argv.insert(1, "--filter=" + ','.join(filters))
 cpplint_wrapper.main()
